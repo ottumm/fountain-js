@@ -156,6 +156,7 @@ var parser = {
         
         eventEmitter.emit(token.type, token.text);
       }
+      eventEmitter.emit('end');
       
       output.title_page_html = title_page_html.join('');
       output.script_html = script_html.join('');
